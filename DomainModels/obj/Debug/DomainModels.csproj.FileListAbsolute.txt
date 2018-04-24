@@ -1,0 +1,10 @@
+G:\GitHub\ShopCart\DomainModels\obj\Debug\DomainModels.csprojResolveAssemblyReference.cache
+G:\GitHub\ShopCart\DomainModels\bin\Debug\DomainModels.dll.config
+G:\GitHub\ShopCart\DomainModels\bin\Debug\DomainModels.dll
+G:\GitHub\ShopCart\DomainModels\bin\Debug\DomainModels.pdb
+G:\GitHub\ShopCart\DomainModels\bin\Debug\EntityFramework.dll
+G:\GitHub\ShopCart\DomainModels\bin\Debug\EntityFramework.SqlServer.dll
+G:\GitHub\ShopCart\DomainModels\bin\Debug\EntityFramework.xml
+G:\GitHub\ShopCart\DomainModels\bin\Debug\EntityFramework.SqlServer.xml
+G:\GitHub\ShopCart\DomainModels\obj\Debug\DomainModels.dll
+G:\GitHub\ShopCart\DomainModels\obj\Debug\DomainModels.pdb

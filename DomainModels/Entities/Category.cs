@@ -12,6 +12,7 @@ namespace DomainModels.Entities
     {
         public Category()
         {
+            Products = new HashSet<Product>();
             createdDate = DateTime.Now;
         }
 
@@ -28,6 +29,6 @@ namespace DomainModels.Entities
         [Display(Name = "Updated Date")]
         public DateTime? updatedDate { get; set; }
 
-        public virtual ICollection<Product> Product { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }
