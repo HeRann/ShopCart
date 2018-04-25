@@ -45,7 +45,7 @@ namespace DomainModels.Entities
         [Display(Name = "Last Name")]
         [Column(TypeName = "varchar")]
         [StringLength(100)]
-        public string name { get; set; }
+        public string lastName { get; set; }
 
         [Display(Name ="Address Line 1")]
         [Column(TypeName ="varchar")]

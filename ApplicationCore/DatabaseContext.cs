@@ -2,9 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 
 namespace ApplicationCore
@@ -25,28 +27,29 @@ namespace ApplicationCore
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<User> Users { get; set; }
 
-        //Using FluentAPI to define M2M replation ship of Role and User -Way (1)
-        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.Entity<User>().HasMany(u => u.Roles).WithMany(m => m.Users).
-        //         Map(r =>
-        //         {
-        //             r.MapLeftKey("UserId");
-        //             r.MapRightKey("RoleId");
-        //             r.ToTable("UserRole");
-        //         });
-        //}
-        //Using FluentAPI to define M2M replation ship of Role and User -Way (2)
+        ////Using FluentAPI to define M2M replation ship of Role and User -Way (1)
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Role>().HasMany(r => r.Users).WithMany(u => u.Roles).
-                Map(m =>
-                {
-                    m.MapLeftKey("RoleId");
-                    m.MapRightKey("UserId");
-                    m.ToTable("UserRole");
-                });
-              
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+            modelBuilder.Entity<User>().HasMany(u => u.Roles).WithMany(m => m.Users).
+                 Map(r =>
+                 {
+                     r.MapLeftKey("UserId");
+                     r.MapRightKey("RoleId");
+                     r.ToTable("UserRole");
+                 });
         }
+        //Using FluentAPI to define M2M replation ship of Role and User -Way (2)
+        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Role>().HasMany(r => r.Users).WithMany(u => u.Roles).
+        //        Map(m =>
+        //        {
+        //            m.MapLeftKey("RoleId");
+        //            m.MapRightKey("UserId");
+        //            m.ToTable("UserRole");
+        //        });
+
+        //}
     }
 }

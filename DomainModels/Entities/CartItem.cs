@@ -26,11 +26,13 @@ namespace DomainModels.Entities
         public decimal  Tax { get; set; }
 
         [Display (Name ="Total")]
-        public Decoder Total { get; set; }
+        public Decimal Total { get; set; }
 
         [ForeignKey("Cart")]
         public int cartId { get; set; }
 
         public virtual Cart Cart { get; set; }
+
+        public virtual Product Product { get; set; }
     }
 }

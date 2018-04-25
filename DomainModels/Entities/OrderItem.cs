@@ -13,7 +13,7 @@ namespace DomainModels.Entities
         [Key]
         public int orderItemId { get; set; }
 
-        [ForeignKey("Product")]
+        //[ForeignKey("Product")]
         public int productId { get; set; }
 
         [Display(Name ="Unit Price")]

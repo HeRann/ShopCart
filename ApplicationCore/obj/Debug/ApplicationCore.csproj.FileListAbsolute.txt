@@ -10,3 +10,5 @@ G:\GitHub\ShopCart\ApplicationCore\bin\Debug\EntityFramework.xml
 G:\GitHub\ShopCart\ApplicationCore\bin\Debug\EntityFramework.SqlServer.xml
 G:\GitHub\ShopCart\ApplicationCore\obj\Debug\ApplicationCore.dll
 G:\GitHub\ShopCart\ApplicationCore\obj\Debug\ApplicationCore.pdb
+G:\GitHub\ShopCart\ApplicationCore\obj\Debug\ApplicationCore.Migrations.Initial.resources
+G:\GitHub\ShopCart\ApplicationCore\obj\Debug\ApplicationCore.csproj.GenerateResource.Cache
