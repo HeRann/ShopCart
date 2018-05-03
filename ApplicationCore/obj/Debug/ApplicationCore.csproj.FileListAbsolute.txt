@@ -12,3 +12,4 @@ G:\GitHub\ShopCart\ApplicationCore\obj\Debug\ApplicationCore.dll
 G:\GitHub\ShopCart\ApplicationCore\obj\Debug\ApplicationCore.pdb
 G:\GitHub\ShopCart\ApplicationCore\obj\Debug\ApplicationCore.Migrations.Initial.resources
 G:\GitHub\ShopCart\ApplicationCore\obj\Debug\ApplicationCore.csproj.GenerateResource.Cache
+G:\GitHub\ShopCart\ApplicationCore\obj\Debug\ApplicationCore.Migrations.AllTables.resources

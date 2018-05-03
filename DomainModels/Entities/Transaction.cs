@@ -19,6 +19,10 @@ namespace DomainModels.Entities
         [Column(TypeName ="varchar")]
         [StringLength(100)]
         public string status { get; set; }
+        [Column(TypeName="varchar")]
+        [Display(Name ="Payment Type")]
+        [StringLength(30)]
+        public string paymentType { get; set; }
 
         [ForeignKey("User")]
         public int userId { get; set; }

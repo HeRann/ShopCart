@@ -23,10 +23,10 @@ namespace DomainModels.Entities
         public decimal quantity { get; set; }
 
         [Display(Name ="Tax")]
-        public decimal  Tax { get; set; }
+        public decimal  tax { get; set; }
 
         [Display (Name ="Total")]
-        public Decimal Total { get; set; }
+        public Decimal total { get; set; }
 
         [ForeignKey("Cart")]
         public int cartId { get; set; }

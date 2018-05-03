@@ -1,6 +1,4 @@
 ﻿using DomainModels.Entities;
-using DomainModels.ViewModel;
-using Repository.Abstraction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace Repository.Abstraction
 {
-    public interface IAuthenticateRepository : Repositary<User>
+    public interface IProductRepository : Repositary<Product>
     {
-        UserModel validateUser(string uName, string password);
+
     }
 }
- 

@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace Repository.Abstraction
 {
-    interface IRepository<TEntity> where TEntity : class
+    public interface Repositary<TEntity> where TEntity :class
     {
-        void Add(TEntity model);
+        TEntity GetById(object Id);
 
-        void Edit(TEntity model);
+        void Add(TEntity model);
 
         void Delete(TEntity model);
 
         void DeleteById(object Id);
 
+        void Update(TEntity model);
+
         IEnumerable<TEntity> GetAll();
 
-        TEntity GetById(object Id);
     }
 }

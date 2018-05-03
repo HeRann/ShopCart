@@ -11,7 +11,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace ApplicationCore
 {
-    class DatabaseContext : DbContext
+    public class DatabaseContext : DbContext
     {
         public DatabaseContext() : base("connstring")
         {
