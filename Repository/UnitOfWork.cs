@@ -9,57 +9,54 @@ using Repository.Implementation;
 
 namespace Repository
 {
-    public class UnitOfWork : IUnitOfWork 
+    public class UnitOfWork : IUnitOfWork
     {
         private DatabaseContext db;
-        private IAuthenticateRepository _AuthenticateRepo;
-        private ICategoryRepository _CategoryRepo;
-        private IOrderRepository _OrderRepo;
-        private IProductRepository _productRepo;
 
-        public UnitOfWork(DatabaseContext _db)
+        public UnitOfWork()
         {
-            this.db = _db;
+            db = new DatabaseContext();
         }
+        private IAuthenticateRepository _authenticateRepo;
         public IAuthenticateRepository AuthenticateRepo
         {
             get
             {
-                if (_AuthenticateRepo == null)
+                if (_authenticateRepo == null)
                 {
-                    _AuthenticateRepo = new AuthenticateRepository(db);
-
-                   
+                    _authenticateRepo = new AuthenticateRepository(db);
                 }
-                return _AuthenticateRepo;
+                return _authenticateRepo;
             }
         }
 
+        private ICategoryRepository _categoryRepo;
         public ICategoryRepository CategoryRepo
         {
             get
             {
-                if (_CategoryRepo == null)
-                {
-                    _CategoryRepo = new CategoryRepository(db);
-                  
+                if(_categoryRepo == null)
+                { 
+                    _categoryRepo = new CategoryRepository(db);
                 }
-                return _CategoryRepo;
+                return _categoryRepo;
             }
         }
 
+        private IOrderRepository _orderRepo;
         public IOrderRepository OrderRepo
         {
             get
             {
-                if (_OrderRepo == null)
+                if (_orderRepo == null)
                 {
-                    _OrderRepo = new OrderRepository(db);
+                    _orderRepo = new OrderRepository(db);
                 }
-                return _OrderRepo;
+                return _orderRepo;
             }
         }
 
+        private IProductRepository _productRepo;
         public IProductRepository ProductRepo
         {
             get
@@ -72,9 +69,10 @@ namespace Repository
             }
         }
 
+
         public int SaveChanges()
         {
-            return db.SaveChanges();
+           return db.SaveChanges();
         }
     }
 }
