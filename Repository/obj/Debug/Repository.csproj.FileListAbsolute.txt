@@ -1,1 +1,14 @@
 G:\GitHub\ShopCart\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+G:\GitHub\ShopCart\Repository\bin\Debug\Repository.dll.config
+G:\GitHub\ShopCart\Repository\bin\Debug\Repository.dll
+G:\GitHub\ShopCart\Repository\bin\Debug\Repository.pdb
+G:\GitHub\ShopCart\Repository\bin\Debug\ApplicationCore.dll
+G:\GitHub\ShopCart\Repository\bin\Debug\DomainModels.dll
+G:\GitHub\ShopCart\Repository\bin\Debug\EntityFramework.dll
+G:\GitHub\ShopCart\Repository\bin\Debug\EntityFramework.SqlServer.dll
+G:\GitHub\ShopCart\Repository\bin\Debug\ApplicationCore.pdb
+G:\GitHub\ShopCart\Repository\bin\Debug\DomainModels.pdb
+G:\GitHub\ShopCart\Repository\bin\Debug\EntityFramework.xml
+G:\GitHub\ShopCart\Repository\bin\Debug\EntityFramework.SqlServer.xml
+G:\GitHub\ShopCart\Repository\obj\Debug\Repository.dll
+G:\GitHub\ShopCart\Repository\obj\Debug\Repository.pdb

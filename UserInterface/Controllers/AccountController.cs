@@ -25,7 +25,14 @@ namespace UserInterface.Controllers
             UserModel user = uow.AuthenticateRepo.validateUser(model.userName, model.password);
             if (user != null)
             {
-                        
+                if (user.roles.Contains("Admin"))
+                {
+                    return RedirectToAction("Index", "Home", new { area = "Admin" });
+                }
+                else if(user.roles.Contains("User"))
+                {
+                    return RedirectToAction("Index", "Home", new { area = "User" });
+                }
             }
             return View();
         }

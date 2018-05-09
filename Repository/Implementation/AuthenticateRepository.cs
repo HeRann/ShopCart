@@ -23,13 +23,13 @@ namespace Repository.Implementation
             UserModel usrModel = new UserModel();
             if (data != null)
             {
-                usrModel.userIdinModel = data.userId;
-                usrModel.passwordinModel = data.password;
-                usrModel.firstNameinModel = data.firstName;
-                usrModel.lastNameinModel = data.lastName;
-                usrModel.contactNumberinModel = data.contactNumber;
-                usrModel.rolesinModel = data.Roles.Select(m => m.name).ToArray();
-                usrModel.userNameinModel = data.userName;
+                usrModel.userId = data.userId;
+                usrModel.password = data.password;
+                usrModel.firstName = data.firstName;
+                usrModel.lastName = data.lastName;
+                usrModel.contactNumber = data.contactNumber;
+                usrModel.roles = data.Roles.Select(m => m.name).ToArray();
+                usrModel.userName = data.userName;
                 return usrModel;
             }
             else

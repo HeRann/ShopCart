@@ -58,6 +58,14 @@
     <Compile Include="Migrations\201805030044344_AllTables.Designer.cs">
       <DependentUpon>201805030044344_AllTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805090107192_BeforeCompile.cs" />
+    <Compile Include="Migrations\201805090107192_BeforeCompile.Designer.cs">
+      <DependentUpon>201805090107192_BeforeCompile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805090150371_BeforeCompile1.cs" />
+    <Compile Include="Migrations\201805090150371_BeforeCompile1.Designer.cs">
+      <DependentUpon>201805090150371_BeforeCompile1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -77,6 +85,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805030044344_AllTables.resx">
       <DependentUpon>201805030044344_AllTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805090107192_BeforeCompile.resx">
+      <DependentUpon>201805090107192_BeforeCompile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805090150371_BeforeCompile1.resx">
+      <DependentUpon>201805090150371_BeforeCompile1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
