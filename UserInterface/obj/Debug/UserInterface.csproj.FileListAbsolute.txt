@@ -58,3 +58,5 @@ G:\GitHub\ShopCart\UserInterface\bin\ApplicationCore.pdb
 G:\GitHub\ShopCart\UserInterface\bin\EntityFramework.xml
 G:\GitHub\ShopCart\UserInterface\bin\EntityFramework.SqlServer.dll
 G:\GitHub\ShopCart\UserInterface\bin\EntityFramework.SqlServer.xml
+G:\GitHub\ShopCart\UserInterface\bin\Newtonsoft.Json.dll
+G:\GitHub\ShopCart\UserInterface\bin\Newtonsoft.Json.xml

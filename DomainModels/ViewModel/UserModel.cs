@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DomainModels.ViewModel
+
+namespace DomainModels.ViewModel 
 {
-    public class UserModel
+    public class UserModel 
     {
+
         public int userId { get; set; }
 
         public string userName { get; set; }
